@@ -1,0 +1,99 @@
+.logo{
+    height:3.25rem;
+    margin-left: 2rem;
+}
+.search{
+    flex:0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width:31.25em) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: #f4f2f2;
+
+    }
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color:inherit;
+        background-color: #f4f2f2;
+        border:none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width:90%;
+        margin-right:-3.25rem;
+        transition: all 0.2s;
+        &:focus{
+            outline:none;
+            width:100%;
+            background-color: #f0eeee;
+        };
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color:#ccc;
+        }
+    }
+
+    &__button {
+        border:none;
+        background-color:transparent;
+        &:focus{
+            outline:none;
+        }
+        &:active{
+            transform:translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill:#999;
+    }
+}
+
+.user_nav{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    & > *{
+        padding:0 2rem;
+        cursor:pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    & > *:hover{
+        background-color: #f4f2f2;
+    }
+    &__icon_box{
+        position: relative;
+    }
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+        fill:#777;
+    }
+    &__notification{
+        font-size:.8rem;
+        height:1.75rem;
+        width:1.75rem;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #eb2f64;
+        color:white;
+        top:1.5rem;
+        right:1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    &__user_photo{
+        height: 3.75rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+    
+}
